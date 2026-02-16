@@ -1,61 +1,71 @@
-# ML-Credit-Card-Fraud-Detection-
-
-
 # 💳 Credit Card Fraud Detection System
 
-### 🔎 Machine Learning Powered Fraud Risk Monitoring
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-An end-to-end Machine Learning project designed to detect fraudulent credit card transactions using a highly imbalanced real-world dataset. The solution includes data preprocessing, model building, evaluation, threshold tuning, and deployment via an interactive Streamlit dashboard.
+---
+
+## 🔎 Machine Learning Powered Fraud Risk Monitoring Dashboard
+
+An end-to-end Machine Learning project that detects fraudulent credit card transactions using a highly imbalanced real-world dataset. The solution includes data preprocessing, exploratory data analysis, model building, evaluation using proper metrics, threshold tuning, and deployment via an interactive Streamlit dashboard.
 
 ---
 
 ## 🚀 Project Overview
 
-Credit card fraud detection is a critical challenge in the financial industry due to:
+Credit card fraud detection is a challenging classification problem due to:
 
-- Extremely imbalanced data (fraud < 1%)
+- Extremely imbalanced dataset (fraud < 1%)
 - High cost of false negatives (missed fraud)
-- Need for precision–recall trade-offs
+- Need for precision–recall optimization
 
-This project builds ML models to classify transactions as:
+This system classifies transactions as:
 
-- ✅ Normal
-- 🚨 Fraudulent
+- ✅ Normal Transaction  
+- 🚨 Fraudulent Transaction  
 
 ---
 
-## 📊 Dataset
+## 📊 Dataset Information
 
 **Source:** Kaggle – Credit Card Fraud Detection Dataset  
 
-**Characteristics:**
+**Dataset Characteristics:**
 
 - 284,807 transactions
 - 492 fraud cases (0.17%)
 - 30 numerical features
-- PCA-transformed features (V1–V28)
+- PCA-transformed anonymized features (`V1 – V28`)
 - Additional features: `Time`, `Amount`
 - Target variable: `Class`
+
+| Class | Meaning |
+|------|---------|
+| 0 | Normal |
+| 1 | Fraud |
 
 ---
 
 ## 🧠 Machine Learning Pipeline
 
 ### ✔ Data Preprocessing
-- Null value verification
-- Class imbalance analysis
+- Verified null values
+- Analyzed class imbalance
 - Feature scaling (`Amount`)
 
 ### ✔ Exploratory Data Analysis (EDA)
 - Class distribution visualization
-- Amount distribution histogram
+- Transaction amount distribution
 
-### ✔ Models Used
+### ✔ Models Implemented
 - Logistic Regression (Baseline)
 - Random Forest Classifier (Main Model)
 
 ### ✔ Evaluation Metrics
-Due to class imbalance:
+Since accuracy is misleading for imbalanced data:
 
 - Precision
 - Recall
@@ -69,48 +79,60 @@ Due to class imbalance:
 | Model | Fraud Precision | Fraud Recall | ROC-AUC |
 |------|----------------|-------------|---------|
 | Logistic Regression | Low | High | ~0.96 |
-| Random Forest | **High (0.96)** | Good (~0.80) | ~0.91 |
+| Random Forest | **0.96** | **~0.80** | **~0.91** |
 
 ---
 
 ## ⚖ Threshold Tuning
 
-Default threshold (0.5) was adjusted to optimize fraud recall.
+To improve fraud detection performance:
 
-**Final Threshold Selected:** `0.3`
+- Adjusted default threshold (0.5)
+- Tested multiple thresholds
+- Selected optimal threshold
 
-✔ Improved fraud detection  
+**Final Threshold Chosen:** `0.3`
+
+✔ Improved fraud recall  
 ✔ Balanced precision–recall trade-off  
 
 ---
 
 ## 🌐 Deployment
 
-The model was deployed using **Streamlit** with:
+The trained Random Forest model was deployed using **Streamlit**.
 
-- Interactive input fields
-- Fraud prediction output
-- Fraud probability gauge meter
-- KPI dashboard
-- Demo fraud/normal scenarios
+### 🖥️ Application Features
+
+✔ Transaction Analysis Interface  
+✔ Fraud Risk Dashboard  
+✔ Fraud Probability Gauge Meter  
+✔ KPI Metrics Display  
+✔ Demo Fraud / Normal Scenarios  
+✔ Model Insights Tab  
 
 ---
 
-## 🖥️ Application Features
+## 📷 Demo
 
-✔ Transaction analysis interface  
-✔ Fraud risk dashboard  
-✔ Fraud probability visualization  
-✔ Model insights tab  
+_Add screenshot or GIF here_
+
+Example:
+
+<img width="1914" height="915" alt="image" src="https://github.com/user-attachments/assets/3fcdc339-e930-48ae-b970-20fb191ae7c6" />
 
 ---
 
 ## 🛠️ Tech Stack
 
+**Languages & Libraries:**
+
 - Python
-- Pandas, NumPy
+- Pandas
+- NumPy
 - Scikit-learn
-- Matplotlib / Seaborn
+- Matplotlib
+- Seaborn
 - Plotly
 - Streamlit
 - Joblib
@@ -120,31 +142,40 @@ The model was deployed using **Streamlit** with:
 ## 📌 Key Learnings
 
 - Handling imbalanced datasets
-- Why accuracy is misleading
+- Why accuracy is unreliable
 - Precision vs Recall trade-offs
 - ROC-AUC interpretation
 - Threshold tuning strategies
 - ML model deployment
+- Dashboard UI design
 
 ---
-## 📷 Demo
-<img width="1914" height="915" alt="image" src="https://github.com/user-attachments/assets/3fcdc339-e930-48ae-b970-20fb191ae7c6" />
-
 
 ## 🔗 GitHub Repository
 
-https://github.com/txjay55/ML-Credit-Card-Fraud-Detection-.git
-
+👉 https://github.com/txjay55/ML-Credit-Card-Fraud-Detection-.git
 
 ---
 
 ## 👨‍💻 Author
 
-**Jay keshvala**  
-Machine Learning & Data Science Enthusiast
+**Jay**  
+Machine Learning & Data Science Enthusiast 🚀
 
 ---
 
-## ⭐ If you found this project interesting
+## ⭐ Support
 
-Consider giving it a ⭐ on GitHub!
+If you found this project interesting, consider giving it a ⭐ on GitHub!
+
+
+
+
+
+
+
+
+
+
+
+
