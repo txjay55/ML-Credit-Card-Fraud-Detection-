@@ -115,9 +115,7 @@ The trained Random Forest model was deployed using **Streamlit**.
 
 ## 📷 Demo
 
-_Add screenshot or GIF here_
 
-Example:
 
 <img width="1914" height="915" alt="image" src="https://github.com/user-attachments/assets/3fcdc339-e930-48ae-b970-20fb191ae7c6" />
 
